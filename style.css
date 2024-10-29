@@ -1,0 +1,157 @@
+:root {
+    --am: #BFF009;
+    --cicl: #F2F2F2;
+    --cies: #868585;
+    --pr: #000000;
+    --prcl: #1E1E1E;
+    --br: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+}
+
+.center, .pequenocenter {
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.center {
+    width: 1312px;
+}
+
+.pequenocenter {
+    width: 504px;
+}
+
+.gap {
+    padding-bottom: 50px;
+}
+
+.cabeca {
+    padding: 19px 0;
+    grid-template-areas:
+        "header header header"
+        "navigation navigation aside"
+        "content content aside"
+        "footer footer footer";
+}
+
+header section nav a {
+    color: var(--pr);
+    text-decoration: none;
+    padding: 16px;
+}
+
+.menucab {
+    background-color: var(--cicl);
+    grid-template-areas: "ma mb mc md me";
+    justify-items: center;
+}
+
+.ga { grid-area: ma; }
+.gb { grid-area: mb; }
+.gc { grid-area: mc; }
+.gd { grid-area: md; }
+.ge { grid-area: me; }
+
+main header h1 {
+    font-size: 48px;
+    padding: 8px 0;
+}
+
+main header p {
+    font-size: 14px;
+    color: var(--cies);
+    max-width: 354px;
+    margin: 0 auto;
+}
+
+main section {
+    width: 1312px;
+    margin: 64px auto;
+}
+
+.imgs {
+    gap: 32px;
+    grid-template-areas:
+        "da db dc"
+        "dd de df";
+}
+
+.card {
+    width: 368px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--cicl);
+    border-radius: 8px;
+}
+
+.card:hover {
+    background-color: var(--pr);
+}
+
+.card a {
+    color: var(--pr);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card:hover a {
+    color: var(--br);
+}
+
+.card p {
+    color: var(--cies);
+    font-size: 14px;
+}
+
+small {
+    background-color: var(--am);
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--prcl);
+    border-radius: 8px;
+}
+
+.divassine {
+    justify-items: end;
+}
+
+.assine {
+    color: var(--pr);
+    background-color: var(--am);
+    padding: 16px;
+    text-decoration: none;
+}
+
+.rodape {
+    color: var(--cies);
+    padding: 46px 0;
+    text-align: center;
+}
+
+.fundordp {
+    background-color: var(--prcl);
+}
+
+.p {
+    text-align: center;
+    margin-bottom: 20px;
+}
